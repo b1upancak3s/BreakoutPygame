@@ -18,7 +18,7 @@ color_list = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 class Player(pygame.Rect):
 
     def __init__(self, x, y):
-        super().__init__(x, y, 100, 25)   # arbitrary values TODO tweak
+        super().__init__(x, y, 100, 25)   # arbitrary values
         self.vx = 0
 
     def draw(self):
@@ -37,7 +37,7 @@ class Ball(pygame.Rect):
     def __init__(self, x, y, diameter):
         super().__init__(x, y, diameter, diameter)
         self.vx = random.randint(3, 5) * random.choice([1, -1])
-        self.vy = random.randint(3, 5) # TODO tweak? T S M TWEEKKKKK
+        self.vy = random.randint(3, 5)
 
     def draw(self):
         pygame.draw.ellipse(screen, 'white', self, 0)
