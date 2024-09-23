@@ -32,7 +32,7 @@ class Player(pygame.Rect):
         elif player.x <= 0:
             player.x = 0
 
-class Ball(pygame.Rect):
+class Ball(pygame.Rect): # SQUARE BALLLLLLLLLLL
 
     def __init__(self, x, y, diameter):
         super().__init__(x, y, diameter, diameter)
